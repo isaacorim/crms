@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/settings.css">
+    <title>Settings | Living Faith Church</title>
+</head>
+
+<body>
+    
+<!-- Header -->
+<header id="headerStyle">
+  <div id="logoContainer">
+    <a href="../login.html"><img src="../images/logo.png" alt="Living Faith Church Logo" width="50" height="50"></a>
+    <h1 id="logoText">Living Faith Church Akobo</h1>
+  </div>
+
+  <div onclick="location.href='dashboard.html'">
+    <button id="headerButton">Dashboard</button>
+  </div>
+</header>
+
+<main>
+  <h2 id="settingsHeading">System Settings</h2>
+
+  <!-- Admin User Management -->
+  <div class="section">
+    <h3>Manage Admin Users</h3>
+    <form class="settings-form" onsubmit="event.preventDefault(); alert('New admin added!')">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <select required>
+        <option value="">Select Role</option>
+        <option>Super Admin</option>
+        <option>Finance Officer</option>
+        <option>Attendance Coordinator</option>
+        <option>Data Entry Clerk</option>
+      </select>
+      <input type="password" placeholder="Temporary Password" required />
+      <button type="submit">Add Admin</button>
+    </form>
+
+    <!-- Current Admins Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pastor Ayo</td>
+          <td>admin@lfcakobo.org</td>
+          <td>Super Admin</td>
+          <td class="action-buttons">
+            <button class="edit-btn" onclick="alert('Edit user')">Edit</button>
+            <button class="remove-btn" onclick="alert('Remove user')">Remove</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Sister Grace</td>
+          <td>finance@lfcakobo.org</td>
+          <td>Finance Officer</td>
+          <td class="action-buttons">
+            <button class="edit-btn">Edit</button>
+            <button class="remove-btn">Remove</button>
+          </td>
+        </tr>
+        <!-- More admin rows as needed -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Change Password Section -->
+  <div class="section">
+    <h3>Change Password</h3>
+    <form class="settings-form" onsubmit="event.preventDefault(); alert('Password changed!')">
+      <input type="password" placeholder="Current Password" required />
+      <input type="password" placeholder="New Password" required />
+      <input type="password" placeholder="Confirm New Password" required />
+      <button type="submit">Update Password</button>
+    </form>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer id="footerStyle" role="contentinfo">
+    <div class="footer-content">
+        <p id="footerPar">Created by <strong id="footerStrong">Zack&reg;</strong> &mdash; All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(206, 194, 194);
+}
+
+/* Header Styling */
+#headerStyle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4e0404;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+/* Logo Section */
+#logoContainer{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#logoText{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#headerButton{
+  padding: 0.6rem 1rem;
+  background-color: white;
+  color: #4e0404;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*main*/
+main {
+  max-width: 1000px;
+  margin: 5rem auto;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#membersHeading {
+  color: #4e0404;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.member-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.member-actions input {
+  flex-grow: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.member-actions button {
+  padding: 0.6rem 1rem;
+  background-color: #4e0404;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.member-actions button:hover {
+  background-color: #6a0f0f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #4e0404;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.action-buttons button {
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Footer */
+#footerStyle {
+  background-color: #4e0404;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 2px solid #fff;
+}
+
+#footerPar{
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+#footerStrong{
+  font-weight: 600;
+}

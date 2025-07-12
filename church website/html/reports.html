@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reports.css">
+    <title>Reports | Living Faith Church</title>
+</head>
+
+<body>
+    
+<!-- Header -->
+<header id="headerStyle">
+  <div id="logoContainer">
+    <a href="../login.html"><img src="../images/logo.png" alt="Living Faith Church Logo" width="50" height="50"></a>
+    <h1 id="logoText">Living Faith Church Akobo</h1>
+  </div>
+
+  <div onclick="location.href='dashboard.html'">
+    <button id="headerButton">Dashboard</button>
+  </div>
+</header>
+
+<main>
+  <h2 id="reportsHeading">Generate Reports</h2>
+
+  <!-- Report Filter Form -->
+  <form class="report-form" onsubmit="event.preventDefault(); alert('Report generated!')">
+    <select required>
+      <option value="">Select Report Type</option>
+      <option value="members">Member List</option>
+      <option value="attendance">Attendance Summary</option>
+      <option value="finance">Financial Records</option>
+      <option value="events">Event Schedule</option>
+    </select>
+    <input type="date" placeholder="Start Date" required />
+    <input type="date" placeholder="End Date" required />
+    <select required>
+      <option value="">Select Format</option>
+      <option value="table">Table View</option>
+      <option value="pdf">PDF</option>
+      <option value="excel">Excel</option>
+    </select>
+    <button type="submit">Generate Report</button>
+  </form>
+
+  <!-- Sample Report Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Record Type</th>
+        <th>Description</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Attendance</td>
+        <td>Sunday Service - 105 members</td>
+        <td>2025-07-06</td>
+      </tr>
+      <tr>
+        <td>Finance</td>
+        <td>Total Offering - ₦12,000</td>
+        <td>2025-07-06</td>
+      </tr>
+      <tr>
+        <td>Event</td>
+        <td>Youth Fellowship - Praise Night</td>
+        <td>2025-06-29</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="download-btn" onclick="alert('Report downloaded!')">Download Report</button>
+</main>
+
+<!-- Footer -->
+<footer id="footerStyle" role="contentinfo">
+    <div class="footer-content">
+        <p id="footerPar">Created by <strong id="footerStrong">Zack&reg;</strong> &mdash; All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>

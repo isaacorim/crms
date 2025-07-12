@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Events | Living Faith Church</title>
+    <link rel="stylesheet" href="../css/events.css" />
+</head>
+<body>
+    
+<!-- Header -->
+<header id="headerStyle">
+  <div id="logoContainer">
+    <a href="../login.html"><img src="../images/logo.png" alt="Living Faith Church Logo" width="50" height="50"></a>
+    <h1 id="logoText">Living Faith Church Akobo</h1>
+  </div>
+
+  <div onclick="location.href='dashboard.html'">
+    <button id="headerButton">Dashboard</button>
+  </div>
+</header>
+
+<main>
+  <h2 id="eventsHeading">Church Events</h2>
+
+  <!-- Event Creation Form -->
+  <form class="event-form" onsubmit="event.preventDefault(); alert('Event added')">
+    <input type="text" placeholder="Event Title" required />
+    <input type="date" required />
+    <select required>
+      <option value="">Select Category</option>
+      <option>Sunday Service</option>
+      <option>Revival Program</option>
+      <option>Wedding</option>
+      <option>Youth Event</option>
+      <option>Prayer Conference</option>
+    </select>
+    <textarea placeholder="Event Description" required></textarea>
+    <button type="submit">Add Event</button>
+  </form>
+
+  <!-- Events Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>July Anointing Service</td>
+        <td>2025-07-07</td>
+        <td>Sunday Service</td>
+        <td class="upcoming">Upcoming</td>
+      </tr>
+      <tr>
+        <td>Youth Praise Night</td>
+        <td>2025-06-29</td>
+        <td>Youth Event</td>
+        <td class="past">Past</td>
+      </tr>
+      <!-- Add more events dynamically -->
+    </tbody>
+  </table>
+</main>
+
+<!-- Footer -->
+<footer id="footerStyle" role="contentinfo">
+  <div class="footer-content">
+    <p id="footerPar">Created by <strong id="footerStrong">Zack&reg;</strong> &mdash; All rights reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>

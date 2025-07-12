@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Members | Living Faith Church</title>
+    <link rel="stylesheet" href="../css/members.css">
+</head>
+<body>
+    
+<!-- Header -->
+<header id="headerStyle">
+  <div id="logoContainer">
+    <a href="../login.html"><img src="../images/logo.png" alt="Living Faith Church Logo" width="50" height="50"></a>
+    <h1 id="logoText">Living Faith Church Akobo</h1>
+  </div>
+
+  <div onclick="location.href='dashboard.html'">
+    <button id="headerButton">Dashboard</button>
+  </div>
+</header>
+
+<main>
+  <h2 id="membersHeading">Church Members</h2>
+
+  <div class="member-actions">
+    <input type="text" placeholder="Search member by name or ID">
+    <button onclick="alert('Add new member form will open')">Add Member</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Member ID</th>
+        <th>Full Name</th>
+        <th>Gender</th>
+        <th>Department</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>LF001</td>
+        <td>Jane Doe</td>
+        <td>Female</td>
+        <td>Choir</td>
+        <td class="action-buttons">
+          <button class="edit-btn" onclick="alert('Edit Member LF001')">Edit</button>
+          <button class="delete-btn" onclick="alert('Delete Member LF001')">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>LF002</td>
+        <td>John Smith</td>
+        <td>Male</td>
+        <td>Ushering</td>
+        <td class="action-buttons">
+          <button class="edit-btn" onclick="alert('Edit Member LF002')">Edit</button>
+          <button class="delete-btn" onclick="alert('Delete Member LF002')">Delete</button>
+        </td>
+      </tr>
+      <!-- Add more rows dynamically with JS or server-side -->
+    </tbody>
+  </table>
+</main>
+
+<!-- Footer -->
+<footer id="footerStyle">
+  <div class="footer-content">
+    <p id="footerPar">Created by <strong id="footerStrong">Zack&reg;</strong> &mdash; All rights reserved</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

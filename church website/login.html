@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    
+<!-- Header -->
+<header id="headerStyle">
+  <div id="logoContainer">
+    <img src="images/logo.png" alt="Living Faith Church Logo" width="50" height="50">
+    <h1 id="logoText">Living Faith Church Akobo</h1>
+  </div>
+</header>
+
+<!-- Admin Login Form -->
+<form id="formStyle" action="html/dashboard.html">
+  <div>
+    <h2 id="formHeading">Admin Login</h2>
+  </div>
+
+  <div class="formGroup">
+    <label class="formLabel">Username</label>
+    <input type="text" name="username" class="formInput" required>
+  </div>
+
+  <div class="formGroup">
+    <label class="formLabel">Password</label>
+    <input type="password" name="password"  class="formInput" required>
+  </div>
+
+  <div class="formGroup">
+    <button type="submit" id="formButton" onclick="window.alert('Welcome sir/ma')">Login</button>
+  </div>
+
+  <div class="formBase">
+    <p>Forgot your password?</p>
+    <a href="html/reset.html" class="formLink">Reset it</a>
+  </div>
+
+  <div class="formBase">
+    <p>Don't have an account?</p>
+    <a href="html/signUp.html" class="formLink">Sign up</a>
+  </div>
+</form>
+
+<!-- Footer -->
+<footer id="footerStyle" role="contentinfo">
+    <div class="footer-content">
+        <p id="footerPar">Created by <strong id="footerStrong">Zack&reg;</strong> &mdash; All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>

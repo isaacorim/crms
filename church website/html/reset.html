@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <title>Reset Password</title>
+</head>
+<body>
+
+<!-- Header -->
+<header id="headerStyle">
+  <div id="logoContainer">
+    <a href="../login.html"><img src="../images/logo.png" alt="Living Faith Church Logo" width="50" height="50"></a>
+    <h1 id="logoText">Living Faith Church Akobo</h1>
+  </div>
+</header>
+
+<!-- Reset Password Form -->
+<form id="formStyle" action="../login.html">
+  <div>
+    <h2 id="formHeading">Reset Password</h2>
+  </div>
+
+  <div class="formGroup">
+    <label class="formLabel">Email Address</label>
+    <input type="email" name="email" class="formInput" required />
+  </div>
+
+  <div class="formGroup">
+    <label class="formLabel">New Password</label>
+    <input type="password" name="new-password" class="formInput" required />
+  </div>
+
+  <div class="formGroup">
+    <label class="formLabel">Confirm New Password</label>
+    <input type="password" name="confirm-password" class="formInput" required />
+  </div>
+
+  <div class="formGroup">
+    <button type="submit" id="formButton" onclick="window.alert('Password reset')">Reset Password</button>
+  </div>
+
+  <div class="formBase">
+    <p>Remember your password?</p>
+    <a href="../login.html" class="formLink">Login</a>
+  </div>
+</form>
+
+<!-- Footer -->
+<footer id="footerStyle" role="contentinfo">
+  <div class="footer-content">
+    <p id="footerPar">
+      Created by <strong id="footerStrong">Zack&reg;</strong> &mdash; All rights reserved
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

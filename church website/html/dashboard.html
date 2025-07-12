@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    
+<!-- Header -->
+<header id="headerStyle">
+  <div id="logoContainer">
+    <a href="../login.html"><img src="../images/logo.png" alt="Living Faith Church Logo" width="50" height="50"></a>
+    <h1 id="logoText">Living Faith Church Akobo</h1>
+  </div>
+</header>
+
+<!-- Main Dashboard -->
+<main>
+  <h2 id="welcomeText">Welcome to Church Record Management System</h2>
+  
+  <section class="dashboard-section">
+    <div class="dashboard-card" onclick="location.href='members.html'">
+      <h3>Manage Members</h3>
+      <p>View, add, and update church member records.</p>
+    </div>
+
+    <div class="dashboard-card" onclick="location.href='attendance.html'">
+      <h3>Track Attendance</h3>
+      <p>Record weekly or event-based attendance for members.</p>
+    </div>
+
+    <div class="dashboard-card" onclick="location.href='finance.html'">
+      <h3>Financial Records</h3>
+      <p>Log offerings, tithes, and donations.</p>
+    </div>
+
+    <div class="dashboard-card" onclick="location.href='events.html'">
+      <h3>Church Events</h3>
+      <p>Plan and manage church programs and events.</p>
+    </div>
+
+    <div class="dashboard-card" onclick="location.href='reports.html'">
+      <h3>Generate Reports</h3>
+      <p>Create summaries for administrative use.</p>
+    </div>
+
+    <div class="dashboard-card" onclick="location.href='settings.html'">
+      <h3>Settings</h3>
+      <p>Manage users, roles, and preferences.</p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer id="footerStyle" role="contentinfo">
+  <div class="footer-content">
+    <p id="footerPar">Created by <strong id="footerStrong">Zack&reg;</strong> &mdash; All rights reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>
